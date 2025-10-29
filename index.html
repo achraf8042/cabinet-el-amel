@@ -1,0 +1,1564 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cabinet Dentaire El Amel - Chirurgie dentaire à Mustapha, Alger. Services de soins dentaires, extraction, implants, prothèses, blanchiment et détartrage. L'espoir de sourire.">
+    <meta name="keywords" content="cabinet dentaire, dentiste Alger, chirurgie dentaire, implants dentaires, blanchiment, détartrage, soins dentaires Algérie, Cabinet El Amel, dentiste Mustapha, orthodontie Alger">
+    <meta name="author" content="Cabinet Dentaire El Amel">
+    <meta name="geo.region" content="DZ-16">
+    <meta name="geo.placename" content="Alger">
+    <meta name="geo.position" content="36.737232;3.086472">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Cabinet Dentaire El Amel - L'espoir de sourire">
+    <meta property="og:description" content="Cabinet de chirurgie dentaire à Mustapha, Alger. Services professionnels de soins dentaires.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_DZ">
+    <meta property="og:url" content="https://www.cabinetdentaireelamel.dz">
+    <meta property="og:image" content="https://www.cabinetdentaireelamel.dz/images/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cabinet Dentaire El Amel - L'espoir de sourire">
+    <meta name="twitter:description" content="Cabinet de chirurgie dentaire à Mustapha, Alger. Services professionnels de soins dentaires.">
+    <meta name="twitter:image" content="https://www.cabinetdentaireelamel.dz/images/og-image.jpg">
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Cabinet Dentaire El Amel",
+      "image": "https://www.cabinetdentaireelamel.dz/images/logo.jpg",
+      "@id": "https://www.cabinetdentaireelamel.dz",
+      "url": "https://www.cabinetdentaireelamel.dz",
+      "telephone": "0555070702",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rue ben zergua si Mustapha ville (route principale)",
+        "addressLocality": "Alger",
+        "postalCode": "16000",
+        "addressCountry": "DZ"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 36.737232,
+        "longitude": 3.086472
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/cabinetdentaireelamel",
+        "https://www.instagram.com/cabinetdentaireelamel"
+      ]
+    }
+    </script>
+    
+    <!-- Medical Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      "name": "Cabinet Dentaire El Amel",
+      "description": "Cabinet de chirurgie dentaire offrant des services complets de soins dentaires à Alger.",
+      "url": "https://www.cabinetdentaireelamel.dz",
+      "telephone": "0555070702",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rue ben zergua si Mustapha ville (route principale)",
+        "addressLocality": "Alger",
+        "addressCountry": "DZ"
+      },
+      "medicalSpecialty": "Dentistry",
+      "openingHours": "Mo,Tu,We,Th 09:00-18:00",
+      "priceRange": "$$"
+    }
+    </script>
+    
+    <title>Cabinet Dentaire El Amel | Chirurgie Dentaire Alger - L'espoir de sourire</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #17a2b8;
+            --secondary-color: #0d8a9e;
+            --dark-color: #2c3e50;
+            --light-color: #f8f9fa;
+            --accent-color: #ffc107;
+            --success-color: #28a745;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark-color);
+            overflow-x: hidden;
+        }
+        
+        /* Preloader */
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+        
+        .preloader.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        .preloader-spinner {
+            width: 60px;
+            height: 60px;
+            border: 5px solid rgba(23, 162, 184, 0.2);
+            border-radius: 50%;
+            border-top-color: var(--primary-color);
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        /* Navbar */
+        .navbar {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+        }
+        
+        .navbar.scrolled {
+            padding: 0.5rem 0;
+        }
+        
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white !important;
+            display: flex;
+            align-items: center;
+        }
+        
+        .navbar-brand i {
+            margin-right: 10px;
+            font-size: 1.8rem;
+        }
+        
+        .nav-link {
+            color: white !important;
+            font-weight: 500;
+            margin: 0 0.5rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-color);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+        
+        .nav-link:hover {
+            color: var(--accent-color) !important;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 150px 0 100px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,144C960,149,1056,139,1152,122.7C1248,107,1344,85,1392,74.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .hero .tagline {
+            font-size: 1.8rem;
+            font-style: italic;
+            margin-bottom: 2rem;
+            color: var(--accent-color);
+        }
+        
+        .hero .lead {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+        
+        .btn-custom {
+            background: var(--accent-color);
+            color: var(--dark-color);
+            padding: 12px 35px;
+            border-radius: 50px;
+            font-weight: 600;
+            border: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            display: inline-block;
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .btn-custom:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+            background: #ffcd39;
+            color: var(--dark-color);
+        }
+        
+        .btn-outline-custom {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 10px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .btn-outline-custom:hover {
+            background: white;
+            color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        
+        /* Stats Section */
+        .stats {
+            padding: 60px 0;
+            background: var(--dark-color);
+            color: white;
+        }
+        
+        .stat-box {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .stat-box i {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            color: #ddd;
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 100px 0;
+            background: var(--light-color);
+        }
+        
+        .section-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--accent-color);
+            border-radius: 2px;
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto 50px;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2.5rem 2rem;
+            height: 100%;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border: none;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover .service-icon {
+            transform: scale(1.1);
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+        }
+        
+        .service-card h4 {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .service-card p {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-card .read-more {
+            color: var(--primary-color);
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        
+        .service-card .read-more:hover {
+            color: var(--secondary-color);
+        }
+        
+        .service-card .read-more i {
+            margin-left: 5px;
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover .read-more i {
+            transform: translateX(5px);
+        }
+        
+        /* About Section */
+        .about {
+            padding: 100px 0;
+        }
+        
+        .about-img {
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            width: 100%;
+            height: auto;
+            transition: all 0.5s ease;
+        }
+        
+        .about-img:hover {
+            transform: scale(1.02);
+        }
+        
+        .about-content h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+        
+        .about-content .lead {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+        
+        .about-content p {
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+        
+        .feature-list {
+            margin-top: 30px;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .feature-icon {
+            color: var(--success-color);
+            margin-right: 15px;
+            font-size: 1.5rem;
+        }
+        
+        /* FAQ Section */
+        .faq {
+            padding: 100px 0;
+            background: var(--light-color);
+        }
+        
+        .accordion-item {
+            border: none;
+            margin-bottom: 15px;
+            border-radius: 10px !important;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .accordion-header {
+            border-radius: 10px !important;
+        }
+        
+        .accordion-button {
+            background-color: white;
+            color: var(--dark-color);
+            font-weight: 600;
+            padding: 1.2rem 1.5rem;
+            box-shadow: none !important;
+        }
+        
+        .accordion-button:not(.collapsed) {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+        
+        .accordion-button::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%232c3e50'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        }
+        
+        .accordion-button:not(.collapsed)::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        }
+        
+        .accordion-body {
+            padding: 1.5rem;
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 100px 0;
+            background: var(--light-color);
+        }
+        
+        .contact-info {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-info h4 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+            padding: 1.2rem;
+            background: var(--light-color);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-item:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateX(10px);
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            color: white;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        
+        .contact-item:hover .contact-icon {
+            background: white;
+            color: var(--primary-color);
+        }
+        
+        .contact-item a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .contact-item strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .map-container {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            height: 450px;
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        /* Appointment Form */
+        .appointment-form {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin-top: 2rem;
+        }
+        
+        .appointment-form h4 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+        
+        .form-control, .form-select {
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+        
+        .form-control:focus, .form-select:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.25rem rgba(23, 162, 184, 0.25);
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, var(--dark-color), #1a252f);
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+        
+        .footer-content {
+            margin-bottom: 2rem;
+        }
+        
+        .footer-logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer-logo i {
+            margin-right: 10px;
+        }
+        
+        .footer-about {
+            margin-bottom: 1.5rem;
+            color: #ddd;
+        }
+        
+        .footer-links h5 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-links h5::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: var(--accent-color);
+        }
+        
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links ul li a {
+            color: #ddd;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer-links ul li a:hover {
+            color: var(--accent-color);
+            transform: translateX(5px);
+        }
+        
+        .footer-links ul li a i {
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+        
+        .social-links {
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 10px;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background: var(--accent-color);
+            color: var(--dark-color);
+            transform: translateY(-3px);
+        }
+        
+        .footer-bottom {
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+            color: #aaa;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero .tagline {
+                font-size: 1.4rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .navbar-brand {
+                font-size: 1.2rem;
+            }
+        }
+        
+        /* Scroll to top button */
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .scroll-top:hover {
+            background: var(--accent-color);
+            color: var(--dark-color);
+            transform: translateY(-5px);
+        }
+        
+        .scroll-top.show {
+            display: flex;
+        }
+        
+        /* WhatsApp Button */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            font-size: 1.8rem;
+        }
+        
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
+            background: #128C7E;
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-tooth"></i> Cabinet Dentaire El Amel
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">À Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center hero-content">
+                <div class="col-lg-7" data-aos="fade-right">
+                    <h1>Excellence en Soins Dentaires</h1>
+                    <p class="tagline">L'espoir de sourire</p>
+                    <p class="lead">Votre santé bucco-dentaire est notre priorité. Services professionnels de soins dentaires à Alger avec une équipe expérimentée et un équipement moderne.</p>
+                    <a href="#contact" class="btn btn-custom">
+                        <i class="fas fa-calendar-check me-2"></i>Prendre Rendez-vous
+                    </a>
+                    <a href="#services" class="btn btn-outline-custom">
+                        <i class="fas fa-info-circle me-2"></i>Nos Services
+                    </a>
+                </div>
+                <div class="col-lg-5 text-center" data-aos="fade-left">
+                    <i class="fas fa-tooth" style="font-size: 15rem; color: rgba(255,255,255,0.2);"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-box">
+                        <i class="fas fa-users"></i>
+                        <div class="stat-number">2500+</div>
+                        <div class="stat-label">Patients Satisfaits</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-box">
+                        <i class="fas fa-award"></i>
+                        <div class="stat-number">15</div>
+                        <div class="stat-label">Ans d'Expérience</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-box">
+                        <i class="fas fa-tooth"></i>
+                        <div class="stat-number">5000+</div>
+                        <div class="stat-label">Traitements Réussis</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-box">
+                        <i class="fas fa-user-md"></i>
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">Spécialistes</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title" data-aos="fade-up">Nos Services</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Des soins dentaires complets pour toute la famille</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-teeth-open"></i>
+                        </div>
+                        <h4>Soins Dentaires</h4>
+                        <p>Traitement des caries, soins conservateurs et prévention pour maintenir vos dents en parfaite santé.</p>
+                        <a href="#" class="read-more">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tooth"></i>
+                        </div>
+                        <h4>Extraction Dentaire</h4>
+                        <p>Extraction dentaire professionnelle avec techniques modernes pour un confort maximal et une récupération rapide.</p>
+                        <a href="#" class="read-more">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-procedures"></i>
+                        </div>
+                        <h4>Orthodontie (ODF)</h4>
+                        <p>Correction des malpositions dentaires et orthodontie pour un sourire parfaitement aligné et fonctionnel.</p>
+                        <a href="#" class="read-more">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-skull"></i>
+                        </div>
+                        <h4>Implants Dentaires</h4>
+                        <p>Solutions permanentes pour remplacer les dents manquantes avec des implants de haute qualité et durables.</p>
+                        <a href="#" class="read-more">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-smile-beam"></i>
+                        </div>
+                        <h4>Prothèses Dentaires</h4>
+                        <p>Prothèses fixes et amovibles pour restaurer votre sourire et votre fonction masticatoire avec précision.</p>
+                        <a href="#" class="read-more">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <h4>Chirurgie Mineure</h4>
+                        <p>Interventions chirurgicales mineures avec précision et soins professionnels pour votre confort et sécurité.</p>
+                        <a href="#" class="read-more">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Blanchiment Dentaire</h4>
+                        <p>Blanchiment dentaire professionnel pour un sourire éclatant et lumineux en toute sécurité.</p>
+                        <a href="#" class="read-more">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-sparkles"></i>
+                        </div>
+                        <h4>Détartrage</h4>
+                        <p>Nettoyage professionnel pour éliminer le tartre et maintenir vos gencives saines et prévenir les maladies.</p>
+                        <a href="#" class="read-more">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <h4>Dentisterie Pédiatrique</h4>
+                        <p>Soins dentaires spécialisés pour les enfants dans un environnement amical et rassurant.</p>
+                        <a href="#" class="read-more">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Crect fill='%2317a2b8' width='800' height='600'/%3E%3Cg fill='%23ffffff' opacity='0.2'%3E%3Ccircle cx='400' cy='300' r='200'/%3E%3Cpath d='M400 150 L450 250 L350 250 Z'/%3E%3C/g%3E%3Ctext x='400' y='320' font-family='Arial' font-size='120' fill='white' text-anchor='middle'%3E%F0%9F%A6%B7%3C/text%3E%3C/svg%3E" alt="Cabinet Dentaire" class="about-img">
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="about-content">
+                        <h2>À Propos de Nous</h2>
+                        <p class="lead">Cabinet de Chirurgie Dentaire El Amel</p>
+                        <p>Fondé il y a plus de 15 ans, le Cabinet Dentaire El Amel s'est engagé à fournir des soins dentaires de qualité supérieure dans un environnement moderne et confortable. Notre mission est d'offrir à chaque patient un traitement personnalisé qui répond à ses besoins spécifiques.</p>
+                        <p>Nous sommes fiers de notre équipe de professionnels hautement qualifiés qui continuent de se former sur les dernières techniques et technologies dentaires. Notre cabinet est équipé d'appareils de pointe pour garantir des diagnostics précis et des traitements efficaces.</p>
+                        <p>Chez El Amel, nous croyons que la prévention est la clé d'une santé bucco-dentaire optimale. C'est pourquoi nous mettons l'accent sur l'éducation de nos patients et sur des soins préventifs réguliers.</p>
+                        
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div>
+                                    <h5>Équipement Moderne</h5>
+                                    <p>Technologie de pointe pour des diagnostics précis</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div>
+                                    <h5>Personnel Qualifié</h5>
+                                    <p>Équipe de dentistes expérimentés et spécialisés</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div>
+                                    <h5>Soins Personnalisés</h5>
+                                    <p>Traitements adaptés à chaque patient</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div>
+                                    <h5>Hygiène Stricte</h5>
+                                    <p>Protocoles de stérilisation rigoureux</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title" data-aos="fade-up">Questions Fréquentes</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Réponses à vos questions sur les soins dentaires</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="accordion" id="faqAccordion1">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    À quelle fréquence devrais-je consulter un dentiste ?
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#faqAccordion1">
+                                <div class="accordion-body">
+                                    Il est recommandé de consulter un dentiste tous les 6 mois pour un contrôle et un nettoyage professionnel. Ces visites régulières permettent de détecter précocement les problèmes dentaires et de prévenir des complications plus graves.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    Le blanchiment dentaire est-il sans danger ?
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#faqAccordion1">
+                                <div class="accordion-body">
+                                    Oui, lorsqu'il est effectué par un professionnel, le blanchiment dentaire est une procédure sûre. Nos dentistes utilisent des produits approuvés et adaptés à votre situation bucco-dentaire pour garantir des résultats efficaces sans endommager vos dents.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    Qu'est-ce qu'un implant dentaire ?
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#faqAccordion1">
+                                <div class="accordion-body">
+                                    Un implant dentaire est une racine artificielle en titane qui est chirurgicalement placée dans la mâchoire pour remplacer une dent manquante. Il sert de base solide pour une couronne, un bridge ou une prothèse dentaire, offrant une solution permanente et esthétique.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="accordion" id="faqAccordion2">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading4">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                                    À quel âge un enfant devrait-il consulter un dentiste ?
+                                </button>
+                            </h2>
+                            <div id="collapse4" class="accordion-collapse collapse show" aria-labelledby="heading4" data-bs-parent="#faqAccordion2">
+                                <div class="accordion-body">
+                                    Il est recommandé qu'un enfant consulte un dentiste dès l'apparition de sa première dent ou avant son premier anniversaire. Ces visites précoces aident à prévenir les problèmes dentaires et à habituer l'enfant à l'environnement du cabinet dentaire.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                    Quelles sont les causes des maladies des gencives ?
+                                </button>
+                            </h2>
+                            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#faqAccordion2">
+                                <div class="accordion-body">
+                                    Les maladies des gencives sont principalement causées par l'accumulation de plaque bactérienne sur les dents et la ligne des gencives. D'autres facteurs comme le tabagisme, le stress, certaines maladies et la génétique peuvent également contribuer à leur développement.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading6">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                    L'orthodontie est-elle uniquement pour les enfants ?
+                                </button>
+                            </h2>
+                            <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#faqAccordion2">
+                                <div class="accordion-body">
+                                    Non, l'orthodontie n'est pas uniquement pour les enfants. De plus en plus d'adultes choisissent des traitements orthodontiques pour corriger l'alignement de leurs dents et améliorer leur sourire. Il existe désormais des options discrètes comme les gouttières transparentes.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title" data-aos="fade-up">Contactez-Nous</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Prenez rendez-vous dès aujourd'hui</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4" data-aos="fade-right">
+                    <div class="contact-info">
+                        <h4>Informations de Contact</h4>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <strong>Réception</strong><br>
+                                <a href="tel:0555070702">0555 07 07 02</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <strong>Gérant</strong><br>
+                                <a href="tel:0555016485">0555 01 64 85</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <strong>Email Cabinet</strong><br>
+                                <a href="mailto:cabinet.dentaire.el.amel@gmail.com">cabinet.dentaire.el.amel@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope-open"></i>
+                            </div>
+                            <div>
+                                <strong>Email Gérant</strong><br>
+                                <a href="mailto:Gerant.cabinet.dentaire.el.amel@gmail.com">Gerant.cabinet.dentaire.el.amel@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <strong>Adresse</strong><br>
+                                Rue ben zergua si Mustapha ville (route principale)<br>
+                                Alger, Algérie
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <strong>Horaires</strong><br>
+                                Dimanche - Jeudi: 9h00 - 18h00<br>
+                                Samedi: 9h00 - 14h00
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="appointment-form">
+                        <h4>Prendre Rendez-vous</h4>
+                        <form id="appointmentForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Votre nom complet" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="tel" class="form-control" placeholder="Numéro de téléphone" required>
+                                </div>
+                            </div>
+                            <input type="email" class="form-control" placeholder="Adresse e-mail" required>
+                            <select class="form-select">
+                                <option value="" selected disabled>Sélectionnez un service</option>
+                                <option value="consultation">Consultation générale</option>
+                                <option value="soins">Soins dentaires</option>
+                                <option value="extraction">Extraction dentaire</option>
+                                <option value="orthodontie">Orthodontie</option>
+                                <option value="implants">Implants dentaires</option>
+                                <option value="protheses">Prothèses dentaires</option>
+                                <option value="blanchiment">Blanchiment dentaire</option>
+                                <option value="detartrage">Détartrage</option>
+                                <option value="pediatrie">Dentisterie pédiatrique</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                            <textarea class="form-control" rows="3" placeholder="Message (optionnel)"></textarea>
+                            <button type="submit" class="btn btn-custom w-100">
+                                <i class="fas fa-calendar-check me-2"></i>Envoyer la demande
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3196.9267932!2d3.0843!3d36.7372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDQ0JzE0LjAiTiAzwrAwNScwNy4wIkU!5e0!3m2!1sfr!2sdz!4v1234567890"
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row footer-content">
+                <div class="col-md-4 mb-4">
+                    <div class="footer-logo">
+                        <i class="fas fa-tooth"></i> Cabinet El Amel
+                    </div>
+                    <p class="footer-about">L'espoir de sourire - Votre partenaire pour une santé bucco-dentaire optimale depuis plus de 15 ans.</p>
+                    <div class="social-links mt-3">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="footer-links">
+                        <h5>Liens Rapides</h5>
+                        <ul>
+                            <li><a href="#home"><i class="fas fa-angle-right"></i> Accueil</a></li>
+                            <li><a href="#services"><i class="fas fa-angle-right"></i> Services</a></li>
+                            <li><a href="#about"><i class="fas fa-angle-right"></i> À Propos</a></li>
+                            <li><a href="#faq"><i class="fas fa-angle-right"></i> FAQ</a></li>
+                            <li><a href="#contact"><i class="fas fa-angle-right"></i> Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="footer-links">
+                        <h5>Nos Services</h5>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> Soins Dentaires</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> Implants & Prothèses</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> Orthodontie</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> Blanchiment & Détartrage</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> Dentisterie Pédiatrique</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i> Chirurgie Dentaire</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr style="border-color: rgba(255,255,255,0.1);">
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="mb-0">&copy; 2025 Cabinet Dentaire El Amel. Tous droits réservés.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p class="mb-0">
+                            <a href="#" style="color: #ddd; text-decoration: none;">Mentions légales</a> | 
+                            <a href="#" style="color: #ddd; text-decoration: none;">Politique de confidentialité</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <div class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- WhatsApp Button -->
+    <div class="whatsapp-btn" id="whatsappBtn">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <script>
+        // Hide preloader when page is loaded
+        window.addEventListener('load', function() {
+            const preloader = document.querySelector('.preloader');
+            preloader.classList.add('hidden');
+            setTimeout(() => {
+                preloader.style.display = 'none';
+            }, 500);
+        });
+
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 70;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const navbarCollapse = document.querySelector('.navbar-collapse');
+                    if (navbarCollapse.classList.contains('show')) {
+                        navbarCollapse.classList.remove('show');
+                    }
+                }
+            });
+        });
+
+        // Navbar background change on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            const scrollTop = document.getElementById('scrollTop');
+            
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+                navbar.style.boxShadow = '0 5px 30px rgba(0,0,0,0.2)';
+            } else {
+                navbar.classList.remove('scrolled');
+                navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
+            }
+            
+            // Show/hide scroll to top button
+            if (window.scrollY > 300) {
+                scrollTop.classList.add('show');
+            } else {
+                scrollTop.classList.remove('show');
+            }
+        });
+
+        // Scroll to top functionality
+        document.getElementById('scrollTop').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // WhatsApp functionality
+        document.getElementById('whatsappBtn').addEventListener('click', function() {
+            const phoneNumber = '213555070702'; // Add country code
+            const message = encodeURIComponent('Bonjour, je souhaite prendre un rendez-vous.');
+            window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+        });
+
+        // Active navigation link
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Animation for service cards on hover
+        const serviceCards = document.querySelectorAll('.service-card');
+        serviceCards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Phone number click tracking (for analytics)
+        document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+            link.addEventListener('click', function() {
+                console.log('Phone call initiated:', this.href);
+                // Add your analytics tracking code here
+            });
+        });
+
+        // Email click tracking (for analytics)
+        document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
+            link.addEventListener('click', function() {
+                console.log('Email initiated:', this.href);
+                // Add your analytics tracking code here
+            });
+        });
+
+        // Appointment form submission
+        document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = this.querySelector('input[type="text"]').value;
+            const phone = this.querySelector('input[type="tel"]').value;
+            const email = this.querySelector('input[type="email"]').value;
+            const service = this.querySelector('select').value;
+            const message = this.querySelector('textarea').value;
+            
+            // Here you would normally send the form data to a server
+            console.log('Appointment request:', { name, phone, email, service, message });
+            
+            // Show success message
+            const formContainer = this.parentElement;
+            const successMessage = document.createElement('div');
+            successMessage.className = 'alert alert-success mt-3';
+            successMessage.innerHTML = '<i class="fas fa-check-circle me-2"></i>Votre demande de rendez-vous a été envoyée avec succès. Nous vous contacterons prochainement pour confirmation.';
+            
+            // Reset form
+            this.reset();
+            
+            // Add success message
+            formContainer.appendChild(successMessage);
+            
+            // Remove success message after 5 seconds
+            setTimeout(() => {
+                successMessage.remove();
+            }, 5000);
+        });
+
+        // Counter animation for stats
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            const speed = 200;
+            
+            counters.forEach(counter => {
+                const animate = () => {
+                    const value = +counter.getAttribute('data-target') || +counter.innerText.replace(/\D/g, '');
+                    const data = +counter.innerText.replace(/\D/g, '');
+                    const time = value / speed;
+                    
+                    if (data < value) {
+                        counter.innerText = Math.ceil(data + time).toLocaleString() + (counter.innerText.includes('+') ? '+' : '');
+                        setTimeout(animate, 1);
+                    } else {
+                        counter.innerText = value.toLocaleString() + (counter.innerText.includes('+') ? '+' : '');
+                    }
+                };
+                
+                // Set target value
+                const finalValue = +counter.innerText.replace(/\D/g, '');
+                counter.setAttribute('data-target', finalValue);
+                
+                // Reset counter to 0
+                counter.innerText = '0' + (counter.innerText.includes('+') ? '+' : '');
+                
+                // Start animation when element is in viewport
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            animate();
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                });
+                
+                observer.observe(counter);
+            });
+        }
+        
+        // Initialize counter animation
+        animateCounters();
+
+        // Console message
+        console.log('%c Cabinet Dentaire El Amel ', 'background: #17a2b8; color: white; font-size: 20px; padding: 10px;');
+        console.log('%c L\'espoir de sourire ', 'background: #ffc107; color: #2c3e50; font-size: 16px; padding: 5px;');
+    </script>
+</body>
+</html>
