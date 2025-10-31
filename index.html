@@ -740,25 +740,6 @@
             color: #aaa;
         }
         
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .hero .tagline {
-                font-size: 1.4rem;
-            }
-            
-            .section-title {
-                font-size: 2rem;
-            }
-            
-            .navbar-brand {
-                font-size: 1.2rem;
-            }
-        }
-        
         /* Scroll to top button */
         .scroll-top {
             position: fixed;
@@ -811,6 +792,112 @@
         .whatsapp-btn:hover {
             transform: scale(1.1);
             background: #128C7E;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero .tagline {
+                font-size: 1.4rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .navbar-brand {
+                font-size: 1.2rem;
+            }
+            
+            /* Fix stats section overflow */
+            .stats {
+                padding: 40px 0;
+            }
+            
+            .stat-box {
+                padding: 15px 5px;
+            }
+            
+            .stat-box i {
+                font-size: 2rem;
+                margin-bottom: 10px;
+            }
+            
+            .stat-number {
+                font-size: 1.8rem;
+                margin-bottom: 5px;
+            }
+            
+            .stat-label {
+                font-size: 0.9rem;
+            }
+            
+            /* Fix contact items */
+            .contact-item {
+                padding: 1rem;
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .contact-icon {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            
+            /* Fix service cards */
+            .service-card {
+                padding: 2rem 1.5rem;
+            }
+            
+            /* Fix buttons */
+            .btn-custom, .btn-outline-custom {
+                width: 100%;
+                margin-bottom: 10px;
+                margin-right: 0;
+            }
+            
+            /* Fix hero section */
+            .hero {
+                padding: 120px 0 80px;
+            }
+            
+            .hero .lead {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            /* Extra small screens */
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero .tagline {
+                font-size: 1.2rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .stat-number {
+                font-size: 1.5rem;
+            }
+            
+            .stat-label {
+                font-size: 0.85rem;
+            }
+            
+            /* Reduce padding on small screens */
+            .services, .about, .faq, .contact {
+                padding: 60px 0;
+            }
+            
+            .service-card {
+                padding: 1.5rem 1rem;
+            }
         }
     </style>
 </head>
